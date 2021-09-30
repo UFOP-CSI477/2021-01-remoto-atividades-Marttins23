@@ -2,11 +2,11 @@
 
 ## Atualize os seus dados:
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
-- Link para o seu GitHub:
+- Nome: Mateus Ferreira Maartins
+- Matrícula: 17.2.8082
+- Curso: Sistemas de Informação
+- Semestre/Ano correntes: 7
+- Link para o seu GitHub: https://github.com/Marttins23
 
 ## [Projeto final:](./Projeto/README.md) 
 
