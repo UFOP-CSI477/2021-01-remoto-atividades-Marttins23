@@ -6,7 +6,7 @@
 
     <style type="text/css">
 
-        h1, h2, h3, li.icone-menu p, .creditos-icones {
+        h1, h2, h3, ul.flex li, .creditos-icones {
             text-align: center;
         }
 
@@ -14,31 +14,30 @@
             margin-top: 70px;
         }
 
-        li.icone-menu {
-            display: inline-block;
+        ul.flex {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        ul.flex li {
             width: 24%;
+            margin-bottom: 15px;
         }
 
-        li.icone-menu img {
-            position: relative;
+        ul.flex img {
             display: block;
-            margin: 0 auto;
+            margin: 15px auto;
         }
 
-        li.icone-menu a {
+        ul.flex a {
             font-family: Arial;
             color: rgb(49, 49, 49);
             font-weight: 600;
             font-size: 16pt;
             text-decoration: none;
-        }
-
-        .link-menu {
-            text-decoration: none;
-        }
-
-        #segunda-linha-menu {
-            margin-top: 25px;
         }
 
         .creditos-icones {
@@ -63,46 +62,46 @@
     <main>
 
         <nav>
-            <ul>
+            <ul class="flex">
                 
-                <li class="icone-menu">
+                <li>
                     <img src="./img/home.png" alt="Ícone da Página Principal">
-                    <p><a href="home.html">Home</a></p>
+                    <a href="home.html">Home</a>
                 </li>
 
-                <li class="icone-menu">
+                <li>
                     <img src="./img/states.png" alt="Ícone da Página de Estados">
-                    <p><a href="estados.html">Estados</a></p>
+                    <a href="estados.html">Estados</a>
                 </li>
         
-                <li class="icone-menu">
+                <li>
                     <img src="./img/city.png" alt="Ícone da Página de Cidades">
-                    <p><a href="cidades.html">Cidades</a></p>
+                    <a href="cidades.html">Cidades</a>
                 </li>
         
-                <li class="icone-menu">
+                <li>
                     <img src="./img/product.png" alt="Ícone da Página de Produtos">
-                    <p><a href="produtos.html">Produtos</a></p>
+                    <a href="produtos.html">Produtos</a>
                 </li>
         
-                <li class="icone-menu" id="segunda-linha-menu">
+                <li>
                     <img src="./img/people.png" alt="Ícone da Página de Pessoas">
-                    <p><a href="pessoas.html">Pessoas</a></p>
+                    <a href="pessoas.html">Pessoas</a>
                 </li>
         
-                <li class="icone-menu">
+                <li>
                     <img src="./img/shopping-cart.png" alt="Ícone da Página de Compras">
-                    <p><a href="compras.html">Compras</a></p>
+                    <a href="compras.html">Compras</a>
                 </li>
         
-                <li class="icone-menu">
+                <li>
                     <img src="./img/profile.png" alt="Ícone da Página de Perfil">
-                    <p><a href="perfil.html">Perfil</a></p>
+                    <a href="perfil.html">Perfil</a>
                 </li>
         
-                <li class="icone-menu">
+                <li>
                     <img src="./img/exit.png" alt="Ícone Sair">
-                    <p><a href="sair.html">Sair</a></p>
+                    <a href="sair.html">Sair</a>
                 </li>
             </ul>
         </nav>
