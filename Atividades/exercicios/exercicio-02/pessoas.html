@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8" dir="ltr">
+    <title>Pessoas</title>
+    <link rel="stylesheet" href="./css/pessoas.css">
+    <link rel="stylesheet" href="./css/menu-regular.css">
+    <link rel="stylesheet" href="./css/table.css">
+</head>
+<body>
+
+    <header>
+        <div class="caixa-menu">
+            <div class="logo-menu">
+                <h2>Sistema de Banco de Dados</h2>
+            </div>
+            <div class="itens-menu">
+                <nav >
+                    <ul class="flex">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="estados.html">Estados</a></li>
+                        <li><a href="cidades.html">Cidades</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="pessoas.html">Pessoas</a></li>
+                        <li><a href="compras.html">Compras</a></li>
+                        <li><a href="perfil.html">Perfil</a></li>
+                        <li><a href="sair.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 50px 0 20px 0;">
+            <h1>Pessoas</h1>
+        </div>
+
+    </header>
+
+    <main>
+
+        <h2>Cadastro</h2>
+
+        <form method="POST" action="validar.html">
+
+            <div class="flex">
+
+                <div id="div-nome">
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome da Pessoa" style="margin-bottom: 10px;">
+                </div>
+
+                <div id="div-data-nascimento">
+                    <label for="data-nascimento">Data de nascimento: </label>
+                    <input type="date" name="data-nascimento" id="data-nascimento" placeholder="Data de Nascimento">
+                </div>
+
+                <div id="div-genero">
+                    <label>Gênero</label>
+    
+                    <div>
+                        <input type="radio" name="genero" id="feminino" value="F">
+                        <label for="feminino">Feminino</label>
+                    </div>
+        
+                    <div>
+                        <input type="radio" name="genero" id="masculino" value="M">
+                        <label for="masculino">Masculino</label>
+                    </div>
+        
+                    <div>
+                        <input type="radio" name="genero" id="nao-binario" value="NB">
+                        <label for="nao-binario">Não binário</label>
+                    </div>
+        
+                    <div>
+                        <input type="radio" name="genero" id="sem-resposta" value="SR">
+                        <label for="sem-resposta">Prefiro não me identificar</label>
+                    </div>
+                </div>
+    
+                <div id="div-cpf">
+                    <label for="cpf">CPF: </label>
+                    <input type="text" name="cpf" id="" placeholder="CPF">
+                </div>
+    
+                <div id="div-rg">
+                    <label for="rg">RG: </label>
+                    <input type="text" name="rg" id="" placeholder="RG">
+                </div>
+    
+                <div id="div-email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+    
+                <div id="div-tel">
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="telefone" style="margin-bottom: 10px;">
+                </div>
+            </div>
+    
+            <div class="flex">
+                <div id="div-rua">
+                    <label for="rua">Rua: </label>
+                    <input type="text" name="rua" id="rua" placeholder="Rua">
+                </div>
+    
+                <div id="div-numero">
+                    <label for="numero">Número: </label>
+                    <input type="text" name="numero" id="numero" placeholder="numero">
+                </div>
+    
+                <div id="div-bairro">
+                    <label for="bairro">Bairro: </label>
+                    <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+                </div>
+    
+                <div id="div-cidade">
+                    <label for="cidade">Cidade: </label>
+                    <input type="text" name="cidade" id="cidade" placeholder="cidade">
+                </div>
+    
+                <div id="div-cep">
+                    <label for="cep">CEP: </label>
+                    <input type="number" name="cep" id="cep" placeholder="CEP">
+                </div>
+
+                <div id="div-botoes">
+                    <input type="submit" value="Cadastrar" style="margin-top: 20px">
+                    <input type="reset" value="Limpar">
+                </div>
+    
+            </div>
+
+        </form>
+
+        <h2 style="margin-top: 50px">Relatório</h2>
+
+        <div class="div-tabela">
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>CEP</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    
+                    <tr>
+                        <td>Ana Maria Costa</td>
+                        <td>098.456.345-56</td>
+                        <td>ana@gmail.com</td>
+                        <td>31985746453</td>
+                        <td>35950000</td>
+                    </tr>
+
+                    <tr>
+                        <td>José Trindade</td>
+                        <td>465.367.345.77</td>
+                        <td>jst@gmail.com</td>
+                        <td>49975846352</td>
+                        <td>35789156</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fernando Ferreira</td>
+                        <td>965.345.675-33</td>
+                        <td>fern@gmail.com</td>
+                        <td>31986758432</td>
+                        <td>35950359</td>
+                    </tr>
+
+                </tbody>
+    
+                <tfoot>
+                    
+                    <tr>
+                        <td colspan="2">Quantidade</td>
+                        <td colspan="3">3</td>
+                    </tr>
+
+                </tfoot>
+    
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+    
+</body>
+</html>

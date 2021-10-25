@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background-color: #F2F1EF;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.div-tabela {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.flex {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.flex > div {
+    margin-bottom: 20px;
+}
+
+#div-nome, #div-rua {
+    flex: 60%;
+}
+
+#div-genero, #div-data-nascimento, #div-tel, #div-cpf, #div-rg, #div-numero, #div-bairro, #div-cep {
+    flex: 20%;
+}
+
+#div-email, #div-cidade, #div-botoes {
+    flex: 40%;
+}
+
+#div-genero label {
+    display: inline;
+}
+
+#div-botoes {
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="number"] {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input[type="date"] {
+    box-sizing: border-box;
+    width: 150px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input[type="submit"], input[type="reset"] {
+    box-sizing: border-box;
+    width: 30%;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #446FA0;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    color: #F2F1EF;
+    transform: scale(1.05);
+    transition: 0.2s;
+}

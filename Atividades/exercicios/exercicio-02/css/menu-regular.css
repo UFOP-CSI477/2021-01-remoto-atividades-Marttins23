@@ -1,0 +1,44 @@
+.caixa-menu {
+    display: flex;
+    background-color: #446FA0;
+    border-bottom: 1px solid #585858;
+    border-radius: 0 0 30px 30px;
+}
+
+.logo-menu {
+    padding: 10px 50px;
+    flex: 40%;
+}
+
+.itens-menu {
+    padding: 10px 50px;
+    flex: 60%;
+}
+
+ul.flex {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.flex li {
+    padding-top: 5px;
+    margin: 0 15px;
+}
+
+ul.flex a {
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+ul.flex a:hover {
+    color:#F2F1EF;
+    text-decoration: underline;
+}

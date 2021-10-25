@@ -1,0 +1,39 @@
+/*############## CSS DA PÁGINA PRINCIPAL ##############*/
+
+h1, h2, h3, ul.menu-pagina-principal-flex li, .creditos-icones-pagina-principal {
+    text-align: center;
+}
+
+main {
+    margin-top: 70px;
+}
+
+ul.menu-pagina-principal-flex {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+ul.menu-pagina-principal-flex li {
+    width: 24%;
+    margin-bottom: 15px;
+}
+
+ul.menu-pagina-principal-flex img {
+    display: block;
+    margin: 15px auto;
+}
+
+ul.menu-pagina-principal-flex a {
+    font-family: Arial;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+    font-size: 16pt;
+    text-decoration: none;
+}
+
+.creditos-icones-pagina-principal {
+    margin: 50px 0 30px 0;
+}
