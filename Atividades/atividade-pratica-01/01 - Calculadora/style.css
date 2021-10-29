@@ -1,0 +1,88 @@
+.container {
+    display: block;
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.caixa-calculadora {
+    margin: 25px 100px;
+    padding: 0 25px;
+    height: 570px;
+    background-color: #5a5a5a;
+    border: 1px solid #5a5a5a;
+    border-radius: 20px;
+}
+
+.ultima-operacao {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 16pt;
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+}
+
+.ultima-operacao div {
+    align-items: center;
+    width: 50%;
+}
+
+#numero-ultima-operacao {
+    padding-top: 22px;
+    text-align: right;
+}
+
+.tela-calculadora {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    height: 60px;
+    background-color: rgb(236, 236, 236);
+    margin-bottom: 25px;
+    font-size: 36pt;
+    font-weight: bold;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 10px;
+}
+
+.tela-calculadora p {
+    margin: 1px;
+}
+
+.botoes div {
+    display: flex;
+    flex-direction: row wrap;
+    height: 80px;
+}
+
+.botoes button {
+    width: 25%;
+    margin: 10px;
+    border: 1px solid #5a5a5a;
+    border-radius: 5px;
+    font-size: 14pt;
+    color:rgb(56, 56, 56);
+    font-weight: bold;
+}
+
+#numero-zero {
+    width:62% !important;
+}
+
+.botoes button:hover {
+    transform: scale(1.1);
+    background-color: #f76522;
+    transition: 0.2s;
+}
+
+#operador-igual {
+    height: 140px !important;
+}
+
+.ultima-fileira {
+    width: 75% !important;
+}
