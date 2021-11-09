@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Controle - PIX</title>
+</head>
+<body onload="carregarBancos()">
+
+    <div class="container">
+
+        <h1>Sistema de Controle - PIX</h1>
+        <h2>Mateus Ferreira Martins - 17.2.8082</h2>
+        
+        <form>
+          
+            <div>
+                <h3>Tipo de PIX</h3>
+            </div>
+
+            <div class="linha">
+                <div>
+                    <input type="radio" name="tipo-pix" class="tipo-pix" id="tipo-pix-envio" value="Enviar" onclick="liberaBancoOrigemEDestino()">
+                    <label for="tipo-pix-envio">Enviar</label>
+                </div>
+                <div>
+                    <input type="radio" name="tipo-pix" class="tipo-pix" id="tipo-pix-recebimento" value="Receber" onclick="liberaBancoOrigem()">
+                    <label for="tipo-pix-recebimento">Receber</label>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Valor R$</h3>
+            </div>
+            <div class="linha">
+                <input type="text" name="input-valor" id="input-valor" disabled>
+            </div>
+
+            <div>
+                <h3>Chave PIX</h3>
+            </div>
+            <div class="linha">
+                
+                <div>
+                    <input type="radio" name="tipo-chave" id="chave-cpf" onclick="liberaInputChave()" value="CPF">
+                    <label for="chave-cpf">CPF</label>
+                </div>
+                <div>
+                    <input type="radio" name="tipo-chave" id="chave-cnpj" onclick="liberaInputChave()" value="CNPJ">
+                    <label for="chave-cnpj">CNPJ</label>
+                </div>
+                <div>
+                    <input type="radio" name="tipo-chave" id="chave-email" onclick="liberaInputChave()" value="E-mail">
+                    <label for="chave-email">E-mail</label>
+                </div>
+                <div>
+                    <input type="radio" name="tipo-chave" id="chave-celular" onclick="liberaInputChave()" value="Celular">
+                    <label for="chave-celular">Celular</label>
+                </div>
+                <div>
+                    <input type="radio" name="tipo-chave" id="chave-aleatoria" onclick="liberaInputChave()" value="Aleatória">
+                    <label for="chave-aleatoria">Chave Aleatória</label>
+                </div>
+            </div>
+
+            <div class="linha">
+                <input type="text" name="input-chave" id="input-chave" disabled>
+            </div>
+
+            <div>
+                <h3>Bancos</h3>
+            </div>
+            <div class="linha" id="linha-banco">
+                <div>
+                    <label for="banco-origem">Banco de Origem</label>
+                    <select class="select-banco" name="banco-origem" id="banco-origem" onchange="capturaNomeDoBanco(event)">
+                        <option value="">Selecione:</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="linha" id="linha-banco">
+                <div>
+                    <label for="banco-destino">Banco de Destino</label>
+                    <select class="select-banco" name="banco-destino" id="banco-destino" onchange="capturaNomeDoBanco(event)">
+                        <option value="">Selecione:</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="linha">
+                <input type="button" value="Realizar PIX" onclick="computarPix()">
+                <input type="button" value="Finalizar" onclick="resumoPix()">
+            </div>
+
+            <p id="resultado-final"></p>
+
+        </form>
+
+        <table id="tabela-pix">
+            <thead>
+
+                <tr>
+                    <th>Tipo de Operação</th>
+                    <th>Chave PIX Utilizada</th>
+                    <th>Banco de Origem</th>
+                    <th>Banco de Destino</th>
+                    <th>Valor R$</th>
+                </tr>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="api.js"></script>
+
+</body>
+</html>
